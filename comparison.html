@@ -1,24 +1,24 @@
 <!doctype html>
 <html lang="en">
-​
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-​
+
     <!-- Bootstrap CSS 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"
         media="screen">
     -->
     <link rel="stylesheet" href="bootstrap.min.css" media="screen">
-​
+
     <!--Our CSS File-->
     <link rel="stylesheet" href="styles.css" media="screen">
-​
-    <title>Visualization Dashboard</title>
+
+    <title>Comparison</title>
 </head>
-​
+
 <body>
     <!-- Start of navbar -->
     <nav class="navbar navbar-default">
@@ -44,12 +44,13 @@
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="visualizations/temp.html">Max Temperature</a></li>
+                   <li><a href="visualizations/temp.html">Max Temperature</a></li>
                     <li><a href="visualizations/humidity.html">Humidity</a></li>
                     <li><a href="visualizations/cloudiness.html">Cloudiness</a></li>
                     <li><a href="visualizations/wind.html">Wind Speed</a></li>
                   </ul>
                 </li>
+                <li><a href="comparison.html">Comparison</a></li>
                 <li><a href="data.html">Data</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
@@ -57,7 +58,47 @@
         </div><!-- /.container-fluid -->
       </nav>
       <!-- End of navbar -->
-​
+
+      <!-- Start of container -->
+      <div class="container">
+        <article class="description-content row">
+          <div class="col-xs-12">
+            <h1 class="description-header">Comparison: Latitude vs X</h1>
+            <hr class="description-hr"/>
+            <p class="description-text">Click any plot to get an in-depth analysis.</p>
+          </div>
+          <div class="col-md-6">
+            <h2 class="comparison-header">vs. Max Temperature</h2>
+            <a href="visualizations/temp.html"><img src="Resources/assets/images/Fig1.png" alt="Latitude vs. Max Temperature" class="comparison-image img-responsive"></a>
+            <hr class="visible-xs visible-sm">
+          </div>
+          <div class="col-md-6">
+            <h2 class="comparison-header">vs. Humidity</h2>
+            <a href="visualizations/humidity.html"><img src="Resources/assets/images/Fig2.png" alt="Latitude vs. Humidity" class="comparison-image img-responsive"></a>
+            <hr class="visible-xs visible-sm">
+          </div>
+          <div class="col-md-6">
+            <h2 class="comparison-header">vs. Cloudiness</h2>
+            <a href="visualizations/cloudiness.html"><img src="Resources/assets/images/Fig3.png" alt="Latitude vs. Cloudiness" class="comparison-image img-responsive"></a>
+            <hr class="visible-xs visible-sm">
+          </div>
+          <div class="col-md-6">
+            <h2 class="comparison-header">vs. Wind Speed</h2>
+            <a href="visualizations/wind.html"><img src="Resources/assets/images/Fig4.png" alt="Latitude vs. Wind Speed" class="comparison-image img-responsive"></a>
+          </div>
+        </article>
+      </div>
+      <!-- End of container  -->
+  
+      <!-- Start of footer -->
+      <footer class="footer navbar-fixed-bottom">
+        <div class="two-toned-footer-color"></div>
+        <p class="text-muted text-muted-footer text-center">
+          &copy; Copyright Coding Bootcamp 2021
+        </p>
+      </footer>
+      <!-- End of footer --> 
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -70,5 +111,5 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 </body>
-​
+
 </html>
